@@ -20,11 +20,16 @@
         context.beginPath();
         context.rect(100, 100, 400, 400);
         context.stroke();
-// doc fuer formen : https://www.w3schools.com/tags/ref_canvas.asp
+        // doc fuer formen : https://www.w3schools.com/tags/ref_canvas.asp
         //neue Form
         context.beginPath();
-        context.arc(300,300, 100, 0, Math.PI * 2)
-        context.stroke()
+        context.arc(300, 300, 100, 0, Math.PI * 2);
+        context.stroke();
+
+        context.beginPath();
+        contxt.moveTo(20, 20);
+        context.bezierCurveTo(20, 100, 200, 100, 200, 20);
+        context.stroke();
       </script>
     </canvas>
   </body>
