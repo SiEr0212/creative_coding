@@ -26,12 +26,29 @@
         context.arc(300, 300, 100, 0, Math.PI * 2);
         context.stroke();
 
-        let years = [2035, 2078, 2024];
-        let menu = ["starter", "main", "desserts", "drinks"];
+        for (let i = 0; i <= 5; i++) {
+          let width = 60;
+          let height = 60;
+          let y = 100;
+          let x = 100;
 
-         for (let i = 0; i < 4; i++) {
+          context.beginPath();
+          context.rect(x, y, width, height);
+          context.stroke();
+        }
+
+        let years = [];
+        let menu = ["starter", "main", "desserts", "drinks", "sides", "ouzo"];
+
+        for (let i = 0; i < menu.length; i++) {
           console.log(menu[i]);
         }
+
+        for (let i = 0; i < 10; i++) {
+          years.push(2040 + i);
+        }
+
+        console.log(years);
       </script>
     </canvas>
   </body>
